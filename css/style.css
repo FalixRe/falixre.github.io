@@ -29,7 +29,7 @@ section#panel {
   fill: url(#SailGradient);
 }
 
-@media only screen and (min-width: 768px) {
+@media (orientation: landscape) {
   section#visualization {
     display: inline-block;
     width: 60vw;
