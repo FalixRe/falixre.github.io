@@ -17,7 +17,7 @@ section#visualization svg {
 }
 
 section#panel {
-  background-image: url('images/WoodenBackground.jpg');
+  background-image: url('../images/WoodenBackground.jpg');
   background-color: #666666;
   color: #EEEEEE;
   text-align: center;
