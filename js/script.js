@@ -1,19 +1,25 @@
 let localizationTable = {
   en: {
-    sloop:"Sloop"
+    sloop:"Sloop",
+	mainSail:"Main sail",
+	foreSail:"Fore sail",
+	hoverOver:"Hover over element"
   },
   pl: {
-    sloop:"Slup"
+    sloop:"Slup",
+	mainSail:"Grot",
+	foreSail:"Fok",
+	hoverOver:"Najedź kursorem na element"
   }
 }
 
-function localizeWord(language, word) {
+function localizeWord(word) {
   return (localizationTable[document.getElementById('language').value][word]);
 }
 
 function localizeAll() {
   for (element of (document.querySelectorAll('[data-localizationName]'))) {
-    element.innerHTML = localizeWord('pl',element.getAttribute('data-localizationName'));
+    element.innerHTML = localizeWord(element.getAttribute('data-localizationName'));
   }
 }
 
@@ -21,9 +27,9 @@ window.onload =  localizeAll();
 
 
 function updateSail(sailName) {
-  document.getElementById('sailName').innerHTML = sailName;
+  document.getElementById('sailName').innerHTML = localizeWord(sailName);
 }
 
 function clearSail() {
-  document.getElementById('sailName').innerHTML = "Hover over element";
+  document.getElementById('sailName').innerHTML = localizeWord("hoverOver");
 }

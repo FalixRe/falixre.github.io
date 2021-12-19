@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-image: url('../images/WoodenBackground.jpg');
+  background-size: cover;
 }
 section#visualization {
   background: rgb(253,187,45);
@@ -18,12 +20,13 @@ section#visualization svg {
 
 section#panel {
   background-color: #666666;
-  background-image: url('../images/WoodenBackground.jpg');
   color: #EEEEEE;
   text-align: center;
   margin: 2vh 4vw;
-  border: 1px solid;
+  border: 5px solid;
+  border-style: groove;
   border-radius: 10px;
+  border-color: #666666;
 }
 
 .sail {
