@@ -1,8 +1,21 @@
+
+@font-face { /*TODO: create my own more pixelized with polish chars.
+  Current is https://freefontsdownload.net/free-hd44780-regular-font-125682.htm
+  Under Creative Commons Attribution Share Alike */
+  font-family: "ScreenFont"; 
+  src: url("../fonts/hd44780.ttf"); 
+}
+
+path:hover {
+ filter:url(#dropshadow);
+}
+
 body {
   margin: 0;
   background-image: url('../images/WoodenBackground.jpg');
   background-size: cover;
 }
+
 section#visualization {
   background: rgb(253,187,45);
   background: -moz-linear-gradient(0deg, rgba(253,187,45,1) 15%, rgba(34,195,172,1) 30%, rgba(34,191,187,1) 32%, rgba(34,135,195,1) 51%, rgba(255,208,98,1) 54%, rgba(255,182,98,1) 59%, rgba(255,150,98,1) 65%, rgba(67,110,173,1) 77%, rgba(49,72,147,1) 84%, rgba(21,30,107,1) 89%, rgba(6,11,59,1) 97%);
@@ -29,6 +42,17 @@ section#panel {
   border-color: #666666;
 }
 
+section#panel div#screen{
+  margin: 10% 20%;
+  padding: 2% 5% ;
+  text-align: left;
+  background-color: #000000;
+  border-radius: 20px;
+  border-color: #a1a1a1;
+  color: #3f8f3f;
+  font-family: 'ScreenFont', 'Courier New';
+}
+
 .sail {
   fill: url(#SailGradient);
 }
@@ -48,4 +72,5 @@ section#panel {
   }
 }
 
-//* { border: 1px solid black; }
+
+/* { border: 1px solid black; }
