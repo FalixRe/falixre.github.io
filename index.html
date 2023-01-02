@@ -7,39 +7,38 @@
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/script.js"></script>
     </head>
-    <body>
-      <section id="visualization">  
-        <object data="images/raw_svgs/sloopPlain.svg" type="image/svg+xml" id="sloop" class="ship"></object>
-        <object data="images/raw_svgs/ketchPlain.svg" type="image/svg+xml" id="ketch" class="ship"></object>
-        <object data="images/raw_svgs/brigPlain.svg" type="image/svg+xml" id="brig" class="ship"></object>
+    <body class="table">
+        <section id="visualization" class="table-cell">  
+          <object data="images/raw_svgs/sloopPlain.svg" type="image/svg+xml" id="sloop" class="ship"></object>
+          <object data="images/raw_svgs/ketchPlain.svg" type="image/svg+xml" id="ketch" class="ship"></object>
+          <object data="images/raw_svgs/brigPlain.svg" type="image/svg+xml" id="brig" class="ship"></object>
 
-        
     </section>
-    <section id="panel">
-        <header>
+        <section id="panel" class="table-cell">
+          <header>
             <h1>Sail Namer T1600</h1>
-        </header>
-        <div id="screen"> <!--maybe some svg radial gradiend simulating scren reflects-->
+          </header>
+          <div id="screen"> <!--maybe some svg radial gradiend simulating scren reflects-->
             <h1 id="shipType" data-localizationName="sloop">Sloop</h1>
             <p>
             <span  data-localizationName="partNameLabel">Part name</span>: <span id="partName" data-localizationName="hoverOver">Hover over element of boat</span>
             </p>
-        </div>
-        <div class="panel-section-name">
-            <span>Language</span><span></span>
-        </div>
-        <select name="language" id="language" onchange="localizeAll()">
-          <option value="en">EN</option>
-          <option value="pl">PL</option>
-        </select>
-        <div class="panel-section-name">
+          </div>
+          <div class="panel-section-name">
+              <span>Language</span><span></span>
+          </div>
+          <select name="language" id="language" onchange="localizeAll()">
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+          </select>
+          <div class="panel-section-name">
             <span>Ship type</span><span class="line-divider"></span>
-        </div>
-        <div id="ship-type-menu" class="instrument-button-menu">
+          </div>
+          <div id="ship-type-menu" class="instrument-button-menu">
             <button onclick="chooseShip('sloop')">SLOOP</button>
             <button onclick="chooseShip('ketch')">KETCH</button>
             <button onclick="chooseShip('brig')">BRIG</button>
-        </div>
-      </section>
+          </div>
+        </section>
     </body>
 </html>

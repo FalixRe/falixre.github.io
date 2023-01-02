@@ -6,6 +6,14 @@
   src: url("../fonts/hd44780.ttf"); 
 }
 
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
 #panel {
   color: #e9e9e9;
 
@@ -73,7 +81,7 @@ body {
   background-size: cover;
 }
 
-section#visualization {
+section#visualization object {
   background: rgb(253,187,45);
   background: -moz-linear-gradient(0deg, rgba(253,187,45,1) 15%, rgba(34,195,172,1) 30%, rgba(34,191,187,1) 32%, rgba(34,135,195,1) 51%, rgba(255,208,98,1) 54%, rgba(255,182,98,1) 59%, rgba(255,150,98,1) 65%, rgba(67,110,173,1) 77%, rgba(49,72,147,1) 84%, rgba(21,30,107,1) 89%, rgba(6,11,59,1) 97%);
   background: -webkit-linear-gradient(0deg, rgba(253,187,45,1) 15%, rgba(34,195,172,1) 30%, rgba(34,191,187,1) 32%, rgba(34,135,195,1) 51%, rgba(255,208,98,1) 54%, rgba(255,182,98,1) 59%, rgba(255,150,98,1) 65%, rgba(67,110,173,1) 77%, rgba(49,72,147,1) 84%, rgba(21,30,107,1) 89%, rgba(6,11,59,1) 97%);
