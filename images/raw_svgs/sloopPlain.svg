@@ -3,6 +3,7 @@
 
 <svg width="600" height="600" viewBox="0 0 600 600" version="1.1" id="svg5" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
   <defs id="defs2">
+    <link rel="stylesheet" href="../../css/svg_style.css" type="text/css" xmlns="http://www.w3.org/1999/xhtml"></link>
     <linearGradient id="linearGradient16305">
       <stop style="stop-color:#fafafa;stop-opacity:1;" offset="0.00000006" id="stop16301" />
       <stop style="stop-color:#fff8ce;stop-opacity:1;" offset="1" id="stop16303" />
@@ -41,6 +42,18 @@
     <linearGradient xlink:href="#linearGradient14124" id="linearGradient16275" x1="421.30151" y1="250.91551" x2="429.63034" y2="250.66402" gradientUnits="userSpaceOnUse" gradientTransform="translate(-84.482563,3.7271719)" />
     <radialGradient xlink:href="#linearGradient16289" id="radialGradient16291" cx="465.78162" cy="310.56329" fx="465.78162" fy="310.56329" r="61.380711" gradientTransform="matrix(0.99242985,-0.12281285,0.60111911,4.8575418,-267.64205,-1055.1391)" gradientUnits="userSpaceOnUse" />
     <radialGradient xlink:href="#linearGradient16305" id="radialGradient16299" cx="386.75854" cy="254.07481" fx="386.75854" fy="254.07481" r="69.422844" gradientTransform="matrix(0.985717,0.16841017,-0.60741002,3.555215,60.327147,-672.21448)" gradientUnits="userSpaceOnUse" />
+    <filter id="dropshadow" height="130%">
+      <feColorMatrix type="matrix" values=
+      "1 1 1 1 1
+      1 1 1 1 1
+      1 1 1 1 1
+      0 0 0 1 0"/>
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   <g id="layer1">
     <path style="fill:url(#radialGradient16291);fill-opacity:1;stroke:#000000;stroke-opacity:1" d="M 452.55662,471.61967 341.34571,81.517181 330.97371,469.891 Z" id="jib" onmouseover="top.updatePart(this)" />
