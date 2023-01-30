@@ -74,7 +74,7 @@ body {
 
 section#visualization object {
   margin: auto;
-  width: 80%;
+  width: 100%;
   height: 100%;
   vertical-align: top;
 }
@@ -102,7 +102,7 @@ section #panel div#screen{
   border-color: #a1a1a1;
   color: #3f8f3f;
   font-family: 'Courier New';
-  font-size: 16px;
+  font-size: 32px;
 }
 
 .sail {
@@ -110,16 +110,12 @@ section #panel div#screen{
 }
 
 
-section#visualization {
-  /*display: inline-block;*/
-  /*width: 60vw;*/
-  height: 100vh;
-}
+
 
 section #panel {
   display: inline-block;
   width: 100%;
-  /*height: auto;*/
+  height: 100%;
     vertical-align: top;
 
 }
@@ -136,7 +132,12 @@ section #panel {
     vertical-align: top;
   }
 
-
+  section#visualization {
+    height: 100vh;
+  }
+  section #panel div#screen{
+    font-size: 16px;
+  }
 }
 
 
