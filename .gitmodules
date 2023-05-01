@@ -1,0 +1,3 @@
+[submodule "react_js_ship"]
+	path = react_js_ship
+	url = git@github.com:FalixRe/react_js_ship.git
