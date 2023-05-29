@@ -4,3 +4,6 @@
 [submodule "ships_log"]
 	path = ships_log
 	url = git@github.com:FalixRe/ships_log.git
+[submodule "UrbanPortfolio"]
+	path = UrbanPortfolio
+	url = https://github.com/FalixRe/UrbanPortfolio.git
