@@ -7,3 +7,6 @@
 [submodule "UrbanPortfolio"]
 	path = UrbanPortfolio
 	url = https://github.com/FalixRe/UrbanPortfolio.git
+[submodule "SailNamerDeprecated"]
+	path = SailNamerDeprecated
+	url = git@github.com:FalixRe/SailNamerDeprecated.git
